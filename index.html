@@ -1,1 +1,9 @@
 <h1>Hi!</h1>
+<?php
+$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+$txt = "Test";
+fwrite($myfile, $txt);
+$txt = "TEST";
+fwrite($myfile, $txt);
+fclose($myfile);
+?>
